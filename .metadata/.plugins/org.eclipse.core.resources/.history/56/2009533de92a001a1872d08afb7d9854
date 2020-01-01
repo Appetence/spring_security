@@ -1,0 +1,18 @@
+server:
+   port: 2233
+
+spring:
+   application: 
+      name: springcloud-config
+   cloud:
+      config:
+         server:
+            git: 
+               uri: https://github.com/Appetence/springcloud-config.git      #github远程git仓库名称
+         search-paths: /**
+         label: master
+   rabbitmq:
+      addresses: localhost
+      port: 5672
+      username: guest
+      password: guestt

@@ -1,0 +1,8 @@
+package com.ztx.security.core.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties()//读取指定前缀的配置文件
+public class SecurityProperties {
+
+}

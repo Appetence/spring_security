@@ -1,0 +1,16 @@
+package com.ztx.security.borwser;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
+@Component
+public class MyUserDetailsService implements UserDetailsService{
+//类似于shiro的ralem   执行认证逻辑
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/org\/springframework\/spring-test\/5.0.12.RELEASE\/spring-test-5.0.12.RELEASE.jar&lt;org.springframework.test.web.servlet.request(MockMvcRequestBuilders.class[MockMvcRequestBuilders" modifiers="1057" timestamp="1577095029140"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/org\/springframework\/spring-test\/5.0.12.RELEASE\/spring-test-5.0.12.RELEASE.jar&lt;org.springframework.test.web.servlet.result(MockMvcResultMatchers.class[MockMvcResultMatchers" modifiers="1057" timestamp="1577095029140"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/javax\/validation\/validation-api\/2.0.1.Final\/validation-api-2.0.1.Final.jar&lt;javax.validation(ConstraintValidator.class[ConstraintValidator" modifiers="1537" timestamp="1576989914258"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/8.5.37\/tomcat-embed-core-8.5.37.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1563765243992"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Program Files\/Java\/jdk1.8.0_201\/jre\/lib\/rt.jar&lt;com.sun.org.apache.xalan.internal.xsltc.dom(Filter.class[Filter" modifiers="1537" timestamp="1573893916511"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/com\/fasterxml\/classmate\/1.3.4\/classmate-1.3.4.jar&lt;com.fasterxml.classmate(Filter.class[Filter" modifiers="1537" timestamp="1562225824860"/>
+<typeInfo handle="=ztx-springSecurity-demo/D:\/Central\/org\/springframework\/spring-webmvc\/5.0.12.RELEASE\/spring-webmvc-5.0.12.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1576922503733"/>
+</typeInfoHistroy>

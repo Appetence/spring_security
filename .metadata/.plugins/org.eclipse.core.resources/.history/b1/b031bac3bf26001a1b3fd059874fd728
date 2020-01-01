@@ -1,0 +1,26 @@
+package com.ztx.web.async;
+/**
+ * 自定义消息队列
+ * @author zuo
+ *
+ */
+public class MockQueue {
+	private String placeOrder;
+	private String complete;
+	public String getPlaceOrder() {
+		return placeOrder;
+	}
+	public void setPlaceOrder(String placeOrder) throws InterruptedException {
+		System.out.println("开始下单，传入订单号："+placeOrder);
+		this.placeOrder = placeOrder;
+		Thread.sleep(1000);
+		System.out.println("请求处理完毕："+placeOrder);
+	}
+	public String getComplete() {
+		return complete;
+	}
+	public void setComplete(String complete) {
+		this.complete = complete;
+	}
+	
+}

@@ -1,0 +1,19 @@
+package com.ztx.web.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BrowserSecurityController {
+	
+	@RequestMapping("authentication/require")
+	public String requireAuthentication() {
+		
+	}
+	
+	@RequestMapping("signIn")
+	public String signIn() {
+		System.out.println("进入注册方法");
+		return "signIn";
+	}
+}

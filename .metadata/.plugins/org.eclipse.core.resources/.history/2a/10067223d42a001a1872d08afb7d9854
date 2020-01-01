@@ -1,0 +1,14 @@
+spring:
+  application:
+     name: springcloud-config-2234
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true#消费者消息确认
+    publisher-returns: true#生产者消息确认
+    bus:
+      trace:
+        enabled: true     # 开启cloud bus的跟踪
+   

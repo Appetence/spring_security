@@ -1,0 +1,19 @@
+package com.ztx.dto;
+
+public class MockQueue {
+	private String placeOrder;
+	private String complete;
+	public String getPlaceOrder() {
+		return placeOrder;
+	}
+	public void setPlaceOrder(String placeOrder) {
+		this.placeOrder = placeOrder;
+	}
+	public String getComplete() {
+		return complete;
+	}
+	public void setComplete(String complete) {
+		this.complete = complete;
+	}
+	
+}

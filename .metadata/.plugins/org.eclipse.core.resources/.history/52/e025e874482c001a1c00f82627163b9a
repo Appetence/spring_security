@@ -1,0 +1,15 @@
+package com.ztx.security;
+
+public class LoginProperties {
+	private String loginPage;
+
+	public String getLoginPage() {
+		return loginPage;
+	}
+
+	public void setLoginPage(String loginPage) {
+		this.loginPage = loginPage;
+	}
+	
+	
+}

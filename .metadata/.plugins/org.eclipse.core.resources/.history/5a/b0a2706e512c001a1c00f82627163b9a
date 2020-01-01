@@ -1,0 +1,14 @@
+package com.ztx.security.core.validate.code;
+/**
+ * 图形验证码
+ * @author zuo
+ *
+ */
+
+import java.awt.image.BufferedImage;
+
+public class ImageCode {
+	private BufferedImage image;
+	private String code;
+	private LocalDateTime expireTime
+}

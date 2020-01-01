@@ -1,0 +1,23 @@
+package com.ztx.security.borwser.support;
+
+public class SimpleResponse {
+
+	
+	private String content;
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public SimpleResponse(String content) {
+		super();
+		this.content = content;
+	}
+
+	public SimpleResponse() {
+		super();
+	}
+}

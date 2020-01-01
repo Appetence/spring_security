@@ -1,0 +1,30 @@
+server:
+   port: 2233
+
+spring:
+   application: 
+      name: springcloud-config
+   cloud:
+      config:
+         server:
+            git: 
+               uri: https://github.com/Appetence/springcloud-config.git      #github远程git仓库名称
+         search-paths: /**
+         label: master
+   bus:
+    trace:
+      enabled: true     # 开启cloud bus的跟踪
+#针对boot2开启
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh   
+rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true#消费者消息确认
+    publisher-returns: true#生产者消息确认
+ 

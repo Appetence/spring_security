@@ -1,0 +1,25 @@
+#session\u96c6\u7fa4\u914d\u7f6e
+spring.session.store-type=none
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+server.servlet.context-path=/demo
+server.port=8090
+#2\u7684\u5199\u6cd5
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+spring.datasource.jdbc.url = jdbc:mysql://bj-cdb-d7rai9r6.sql.tencentcdb.com:62502/ealliancepurchase?characterEncoding=utf8&useSSL=true
+spring.datasource.jdbc.username = ccpqry
+spring.datasource.jdbc.password = ccpqry
+#security config
+security.basic.enabled = true
+domain.localLoad=G:/myworkspeake/imooc/ztx-springSecurity-demo/src/main/resources
+
+#\u914d\u7f6e\u9759\u6001\u8def\u5f84\uff0c\u6d4f\u89c8\u5668\u53ef\u4ee5\u76f4\u63a5\u8bbf\u95eestatic\u548ctemplates\u6587\u4ef6\u5939\u4e0b\u7684\u8d44\u6e90
+spring.resources.static-locations=classpath:/static,classpath:/templates
+thymeleaf.cache= false  #\u662f\u5426\u7f13\u5b58\uff0c\u5f00\u53d1\u6a21\u5f0f\u4e0b\u8bbe\u7f6e\u4e3afalse\uff0c\u907f\u514d\u6539\u4e86\u6a21\u677f\u8fd8\u8981\u91cd\u542f\u670d\u52a1\u5668\uff0c\u7ebf\u4e0a\u8bbe\u7f6e\u4e3atrue\uff0c\u53ef\u4ee5\u63d0\u9ad8\u6027\u80fd\u3002
+thymeleaf.check-template-location= true  #check-tempate-location: \u68c0\u67e5\u6a21\u677f\u8def\u5f84\u662f\u5426\u5b58\u5728
+thymeleaf.mode=HTML5
+thymeleaf.encoding=UTF-8
+thymeleaf.content-type=text/html
+thymeleaf.prefix=classpath:/templates/
+thymeleaf.suffix= .html
+
+ztx.security.browser.loginPage = /ztx-singIn.html

@@ -1,0 +1,12 @@
+package com.ztx;
+
+import org.springframework.boot.SpringApplication;
+public class EurekaApplication {
+	//集中监控消费端，
+
+		public static void main(String[] args) {
+
+			SpringApplication.run(EurekaApplication.class, args);
+
+		}
+}

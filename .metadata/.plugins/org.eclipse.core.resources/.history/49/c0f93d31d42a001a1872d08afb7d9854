@@ -1,0 +1,4 @@
+spring:
+  application:
+     name: springcloud-config-2234
+  

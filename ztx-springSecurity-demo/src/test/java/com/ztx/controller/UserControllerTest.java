@@ -1,0 +1,88 @@
+package com.ztx.controller;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.fileUpload;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Date;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class UserControllerTest {
+	//模拟mvc环境
+	@Autowired
+	public WebApplicationContext wac;
+	
+	public MockMvc mvc;
+	
+	@Before
+	public void setup() {
+		mvc = MockMvcBuilders.webAppContextSetup(wac).build();//
+	}
+	//文件上传
+	@Test
+	public void uploadFile() throws Exception {
+		String result = mvc.perform(fileUpload("/file")
+											//参数名      文件			格式（表单提交）            文件内容
+				.file(new MockMultipartFile("file", "text.txt","multipart/form-data","hello world".getBytes())))
+				.andExpect(status().isOk()).andReturn().getResponse().getContentAsString();
+		System.out.println(result);
+	}
+	@Test
+	public void whenQuarySuccess() throws Exception {
+		String result = mvc.perform(get("/user")
+				//MockMvcRequestBuilders.get("/user")//访问路径
+			.contentType(MediaType.APPLICATION_JSON_UTF8))//编码格式
+			.andExpect(status().isOk())//返回状态码为ok
+			.andExpect(jsonPath("$.length()"). value(3))//返回一个集合，长度为3
+			.andReturn().getResponse().getContentAsString();//json字符串转为string
+		System.out.println(result);
+	}
+	@Test
+	public void getInfo() throws Exception {
+		String result = mvc.perform(get("/user/1")
+				//MockMvcRequestBuilders.get("/user")//访问路径
+			.contentType(MediaType.APPLICATION_JSON_UTF8))//编码格式
+			.andExpect(status().isOk())//返回状态码为ok
+			.andReturn().getResponse().getContentAsString();//返回一个集合，长度为3
+		System.out.println(result);
+		
+	}
+	//错误
+	@Test
+	public void getInfoError() throws Exception {
+		String result = mvc.perform(get("/user/a")
+				//MockMvcRequestBuilders.get("/user")//访问路径
+			.contentType(MediaType.APPLICATION_JSON_UTF8))//编码格式
+			.andExpect(status().is4xxClientError())//返回状态码为ok
+			.andReturn().getResponse().getContentAsString();//返回一个集合，长度为3
+		System.out.println(result);
+		
+	}
+	@Test
+	public void create() throws Exception {
+		Date d = new Date();
+		String content = "{\"username\":1,\"password\":null,\"birthday\":"+d.getTime()+"}";
+		
+		mvc.perform(post("/user")
+			.contentType(MediaType.APPLICATION_JSON_UTF8)//编码格式
+			.content(content))//
+			.andExpect(status().isOk())//返回状态码为ok
+			.andReturn().getResponse().getContentAsString();//返回一个集合，长度为3
+		
+	}
+}

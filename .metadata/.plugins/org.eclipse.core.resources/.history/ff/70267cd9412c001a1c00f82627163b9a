@@ -1,0 +1,43 @@
+package com.ztx.security.borwser;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import com.ztx.security.core.properties.SecurityProperties;
+/**
+ * 
+ * @author zuo
+ *
+ */
+@Configuration
+public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
+	@Autowired
+	private SecurityProperties securityProperties;
+	
+	
+	@Bean(name="passwordEncoder")
+	public PasswordEncoder passwordEncoder() {//主要通过passwordEncoder的encode和matches方法来加密和解密用户的密码的
+		return new BCryptPasswordEncoder();//实现了passwordEncoder接口的一个实体类，该实体类加密时每次加密采用的salt都不相同
+	}
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		
+		http.formLogin()//表单提交方式登录
+			.loginPage("/length")//登录页
+			.loginProcessingUrl("/authentication/form")//让默认的login登录方法处理该url
+		//http.httpBasic()//httpbasic方式登录
+			.and()
+			.authorizeRequests()
+			.antMatchers("length","/authentication/require",securityProperties.getBrowserProperties().getLoginPage()).permitAll()//放开指定url
+			.anyRequest()
+			.authenticated()
+			.and()
+			.csrf()
+			.disable();//关闭csrf跨站请求伪造功能
+	}
+}

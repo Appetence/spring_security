@@ -1,0 +1,19 @@
+package com.ztx.web.async;
+
+import java.util.concurrent.Callable;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AsyncController {
+	
+	
+	public Callable<String> order(){
+		
+		 Callable<String> result = new  Callable<String>();
+		
+		
+		return null;
+		
+	}
+}

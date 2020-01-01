@@ -1,0 +1,14 @@
+server:
+    port: 7001
+eureka:
+#   server:
+#        enable-self-preservation: false    #禁用eureka自我保护机制
+    instance:
+         hostname: eureka7001.com      #多服务集群时使用，通过域名映射实现
+    #    hostname: localhost #eureka服务端实例名称，单一服务时使用
+    client:
+        register-with-eureka: false      #不向注册中心注册自己
+        fetch-registry: false      #表示自己就是注册中心，无需检索服务
+        service-url:
+        #     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/      #设置与eureka交互的地址单模块时候使用
+              defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/

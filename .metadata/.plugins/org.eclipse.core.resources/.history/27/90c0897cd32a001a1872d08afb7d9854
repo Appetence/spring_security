@@ -1,0 +1,10 @@
+spring:
+   rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: adminmq
+    password: 123456
+    publisher-confirms: true
+    publisher-returns: true
+   application:
+     name: springcloud-config-2234

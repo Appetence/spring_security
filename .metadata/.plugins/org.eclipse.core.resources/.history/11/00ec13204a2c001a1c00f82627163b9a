@@ -1,0 +1,29 @@
+package com.ztx.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+import com.ztx.security.BrowserProperties;
+
+@ConfigurationProperties(prefix = "imoc.ztx.security")
+public class SecurityProperties {
+/*
+private VaidateCodeProperties code = new VaidateCodeProperties();
+public VaidateCodeProperties getCode() {
+        return code;
+    }
+
+    public void setCode(VaidateCodeProperties code) {
+        this.code = code;
+    }*/
+	BrowserProperties browser = new BrowserProperties();
+
+	public BrowserProperties getBrowser() {
+		return browser;
+	}
+
+	public void setBrowser(BrowserProperties browser) {
+		this.browser = browser;
+	}
+	
+
+}

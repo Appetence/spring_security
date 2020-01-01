@@ -1,0 +1,23 @@
+package com.ztx.web.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.ztx.security.core.properties.SecurityProperties;
+
+@Controller
+public class WebController {
+
+		@RequestMapping("signIn")
+		public String signIn() {
+			System.out.println("进入默认登录方法");
+			return "signIn";
+		}
+		@RequestMapping("browserLingIn")
+		public String browserLingIn() {
+			System.out.println("进入登录方法");
+			return "ztx-singIn";
+		}
+}

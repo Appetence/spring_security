@@ -1,0 +1,19 @@
+package com.ztx.security.core.properties;
+
+import com.ztx.security.core.properties.login.LoginProperties;
+
+public class BrowserProperties {
+	
+	private  LoginProperties   login  = new LoginProperties();
+
+	public LoginProperties getLogin() {
+		return login;
+	}
+
+	public void setLogin(LoginProperties login) {
+		this.login = login;
+	}
+
+	
+
+}

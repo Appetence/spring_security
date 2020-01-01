@@ -1,0 +1,5 @@
+package com.ztx.web.async;
+
+public class QueueListener {
+
+}

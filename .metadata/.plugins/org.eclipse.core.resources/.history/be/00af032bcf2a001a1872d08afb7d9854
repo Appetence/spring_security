@@ -1,0 +1,7 @@
+spring:
+   cloud:
+      config:
+         name: application-config-clinet   #从github上读取的配置文件名
+         profile: dev #本次访问配置选项
+         label: master #哪个分支
+         uri: http://config2233.com:2233 

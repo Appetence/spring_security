@@ -1,0 +1,5 @@
+package com.ztx.dto;
+
+public class MockQueue {
+
+}

@@ -1,0 +1,5 @@
+package com.ztx.security.borwser;
+
+public class MyUserDetailsService {
+
+}

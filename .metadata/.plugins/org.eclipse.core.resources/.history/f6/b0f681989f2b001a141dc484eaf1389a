@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" >
+<title>注册页面</title>
+</head>
+<body>
+<h1>wwwwwwww.注册页面.com</h1>
+
+
+
+<form action="">
+	<input>
+	<input>
+
+
+</form>
+</body>
+</html>

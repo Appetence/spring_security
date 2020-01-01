@@ -1,0 +1,15 @@
+#session\u96c6\u7fa4\u914d\u7f6e
+spring.session.store-type=none
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+server.servlet.context-path=/demo
+server.port=8090
+#2\u7684\u5199\u6cd5
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+spring.datasource.jdbc.url = jdbc:mysql://bj-cdb-d7rai9r6.sql.tencentcdb.com:62502/ealliancepurchase?characterEncoding=utf8&useSSL=true
+spring.datasource.jdbc.username = ccpqry
+spring.datasource.jdbc.password = ccpqry
+#security config
+security.basic.enabled = false
+domain.localLoad=G:/myworkspeake/imooc/ztx-springSecurity-demo/src/main/resources
+spring.mvc.view.prefix=/pages/
+spring.mvc.view.suffix=.html

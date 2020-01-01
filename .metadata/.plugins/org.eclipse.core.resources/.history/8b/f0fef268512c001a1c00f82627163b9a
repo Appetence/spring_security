@@ -1,0 +1,9 @@
+package com.ztx.security.core.validate.code;
+/**
+ * 图形验证码
+ * @author zuo
+ *
+ */
+public class ImageCode {
+
+}

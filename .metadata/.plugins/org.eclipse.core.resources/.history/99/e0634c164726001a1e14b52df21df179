@@ -1,0 +1,32 @@
+package com.ztx.web.async;
+
+import java.util.concurrent.Callable;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AsyncController {
+	private Logger logger = LoggerFactory.getLogger(AsyncController.class);
+	
+	public Callable<String> order(){
+		
+		 Callable<String> result = new  Callable<String>() {
+
+			@Override
+			public String call() throws Exception {
+				logger.info("副线程开始");
+				
+				Thread.sleep(1000);
+				logger.info("副线程结束");
+				return "success full";
+			}
+			 
+		 };
+		
+		
+		return null;
+		
+	}
+}

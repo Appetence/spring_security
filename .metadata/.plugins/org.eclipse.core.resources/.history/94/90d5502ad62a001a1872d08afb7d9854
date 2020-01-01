@@ -1,0 +1,27 @@
+spring:
+   cloud:
+      config:
+         name: application-config-clinet   #从github上读取的配置文件名
+         profile: test #本次访问配置选项
+         label: master #哪个分支
+         uri: http://config2233.com:2233   #服务启动后先去2233后去github读取配置文件
+  bus:
+    trace:
+      enabled: true     # 开启cloud bus的跟踪
+#针对boot2开启
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: bus-refresh   
+rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true#消费者消息确认
+    publisher-returns: true#生产者消息确认
+ 
+#bootstrap.yml系统级配置文件，优先级最高;不会被本地配置覆盖；主要负责从外部源加载，保证Bootstrap Context和application Context分离
+#                                 application.yml是用户级的配置文件
+

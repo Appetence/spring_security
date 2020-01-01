@@ -1,0 +1,5 @@
+package com.ztx.web.controller;
+
+public class PropertiesReadController {
+
+}

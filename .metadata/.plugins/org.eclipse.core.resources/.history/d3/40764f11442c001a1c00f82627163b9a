@@ -1,0 +1,14 @@
+package com.ztx.config;
+@ConfigurationProperties(prefix = "club.wenfan.security.browser")
+public class SecurityProperties {
+
+private VaidateCodeProperties code = new VaidateCodeProperties();
+public VaidateCodeProperties getCode() {
+        return code;
+    }
+
+    public void setCode(VaidateCodeProperties code) {
+        this.code = code;
+    }
+
+}

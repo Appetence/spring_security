@@ -1,0 +1,38 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%><!doctype html>
+<html style="font-size: 50px;">
+<body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>提醒</title>
+    <link rel="stylesheet" href="/Hdpt/css/bootstrap.css"/>
+    <link href="/Hdpt/css/consult.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/Hdpt/css/personal.css">
+</head>
+
+
+<div class="container">
+	<div class="row" style="text-align:center;margin-top:100px;">
+		<div class="col-md-12">
+			<i class="glyphicon glyphicon-exclamation-sign" style="font-size:140px;color:#808080"></i>
+		</div>
+	    <div class="col-md-12" style="margin-top:30px;">
+			${errMsg }
+		</div>
+	</div>
+   
+</div>
+
+
+</body>
+</html>
+

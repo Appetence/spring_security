@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;ztx-springSecurity-app&apos;&#x0D;&#x0A;- Original project: &apos;ztx-springSecurity-app&apos;&#x0D;&#x0A;- Original element: &apos;ztx-springSecurity-app/src/main/java/ztx.springSecurity.app.ztx_springSecurity_app&apos;" description="Delete element" element1="/src\/main\/java&lt;ztx.springSecurity.app.ztx_springSecurity_app" element2="/src\/main\/java&lt;ztx.springSecurity.app" element3="/src\/main\/java&lt;ztx.springSecurity" element4="/src\/main\/java&lt;ztx" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1577093758234" subPackages="false" version="1.0"/>
+</session>

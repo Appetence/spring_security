@@ -1,0 +1,22 @@
+package com.ztx.dto;
+
+public class MockQueue {
+	private String placeOrder;
+	private String complete;
+	public String getPlaceOrder() {
+		return placeOrder;
+	}
+	public void setPlaceOrder(String placeOrder) {
+		System.out.println("开始下单，传入订单号："+placeOrder);
+		this.placeOrder = placeOrder;
+		System.out.println("开始下单，订单号传入成功："+placeOrder);
+	}
+	public String getComplete() {
+		return complete;
+	}
+	public void setComplete(String complete) {
+		System.out.println("订单处理完成："+placeOrder);
+		this.complete = complete;
+	}
+	
+}

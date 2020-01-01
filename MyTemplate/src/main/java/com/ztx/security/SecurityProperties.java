@@ -1,0 +1,19 @@
+package com.ztx.security;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "imoc.security.browser", ignoreUnknownFields = true)//读取指定前缀的配置文件
+public class SecurityProperties {
+	private BrowserProperties browser = new BrowserProperties();
+
+	public BrowserProperties getBrowserProperties() {
+		return browser;
+	}
+
+	public void setBrowserProperties(BrowserProperties browserProperties) {
+		this.browser = browserProperties;
+	}
+	
+	
+	
+}

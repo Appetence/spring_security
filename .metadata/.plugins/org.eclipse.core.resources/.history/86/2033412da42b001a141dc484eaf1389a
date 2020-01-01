@@ -1,0 +1,51 @@
+package com.ztx.web.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
+import org.springframework.security.web.savedrequest.RequestCache;
+import org.springframework.security.web.savedrequest.SavedRequest;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BrowserSecurityController {
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	//
+	RequestCache requestCache  =  new HttpSessionRequestCache();
+	
+	/**
+	 * 主要从session中拿到用户的请求，判断是那种类型的，html则跳转注册页，rest则返回json
+	 * @param request
+	 * @param response
+	 * @return 区分请求类型，判断跳转页面
+	 */
+	@RequestMapping("authentication/require")
+	@ResponseStatus(code = HttpStatus.UNAUTHORIZED)
+	public String requireAuthentication(HttpServletRequest request , HttpServletResponse response) {
+		
+		 SavedRequest saveRequest = requestCache.getRequest(request, response);
+		 if(saveRequest != null) {
+			 String targetUrl = saveRequest.getRedirectUrl();//获取链接后缀
+			 logger.info("跳转请求链接："+targetUrl);
+			 if(StringUtils.endsWithIgnoreCase(targetUrl, "html")) {
+				 
+			 }
+		 }
+		
+		return "";
+		
+	}
+	
+	@RequestMapping("signIn")
+	public String signIn() {
+		System.out.println("进入注册方法");
+		return "signIn";
+	}
+}

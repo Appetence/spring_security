@@ -1,0 +1,21 @@
+package com.ztx.web.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.ztx.security.core.properties.SecurityProperties;
+
+@Controller
+public class PropertiesReadController {
+
+	　　@Autowired
+	    private SecurityProperties securityProperties;
+
+	    @RequestMapping("/length")
+	    public @ResponseBody String length(){
+	        String length = securityProperties.getBrowserProperties().getLoginPage();
+	        return String.valueOf(length);
+	    }
+}

@@ -1,0 +1,9 @@
+club.wenfan.security.browser.code.img.height=100
+club.wenfan.security.browser.code.img.width=100
+club.wenfan.security.browser.code.img.codeCount=4
+club.wenfan.security.browser.code.img.expiredTime=60
+
+
+imoc.security.browser.loginPage= /ztx-singIn.html
+
+imoc.security.browser.login= /ztx-singIn.html

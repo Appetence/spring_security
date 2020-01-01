@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576726894465_1" label="security" name="security">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item elementID="=ztx-springSecurity-browser" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ztx-springSecurity-demo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ztx-springSecurity-app" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ztx-springSecurity" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MyTemplate" type="4"/>
+<item elementID="=ztx-springSecurity-core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576726914257_2" label="cloud" name="cloud">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud" type="4"/>
+<item elementID="=springcloud-eureka-7002" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-consumer-dept-feign" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-zuul-gateway-9527" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-provider-dept-8002" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-consumer-dept-80" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-config-2234" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-eureka-7001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-eureka-7003" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-provide-dept-hystrix-8001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-config-eureka-client-7001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-provider-dept-8001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-provider-dept-8003" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-api" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-config-dept-clean-8001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-config-2233" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-provide-dept-hystrix-dashboard" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=springcloud-config-eureka-clien-7001" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1577350442906_4" label="springcloud" name="springcloud">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-eureka-7002" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-consumer-dept-feign" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-zuul-gateway-9527" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-provider-dept-8002" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-consumer-dept-80" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-config-2234" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-eureka-7001" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-eureka-7003" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-provide-dept-hystrix-8001" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-provider-dept-8001" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-provider-dept-8003" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-config-eureka-client-7001" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-config-dept-clean-8001" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-provide-dept-hystrix-dashboard" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-config-2233" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springcloud-config-eureka-clien-7001" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1576681754235_0" label="Window Working Set" name="Aggregate for window 1576681754235"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1577759727967_8" label="Multiple Working Sets" name="Aggregate:cloud:security:">
+<workingSet IMemento.internal.id="cloud"/>
+<workingSet IMemento.internal.id="security"/>
+</workingSet>
+<mruList name="security"/>
+<mruList name="cloud"/>
+</workingSetManager>

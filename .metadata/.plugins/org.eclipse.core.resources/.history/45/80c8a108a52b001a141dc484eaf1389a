@@ -1,0 +1,7 @@
+package com.ztx.security.borwser.support;
+
+public class SimpleResponse {
+
+	
+	private String content;
+}

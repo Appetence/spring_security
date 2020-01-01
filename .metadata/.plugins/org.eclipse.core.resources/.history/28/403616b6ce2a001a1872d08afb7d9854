@@ -1,0 +1,14 @@
+package com.ztx;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+@SpringBootApplication
+public class EurekaApplication {
+	//集中监控消费端，
+
+		public static void main(String[] args) {
+
+			SpringApplication.run(EurekaApplication.class, args);
+
+		}
+}

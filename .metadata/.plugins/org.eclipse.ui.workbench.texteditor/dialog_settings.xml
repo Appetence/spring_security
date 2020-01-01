@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="port" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="port"/>
+			<item value="parent"/>
+			<item value="template"/>
+			<item value="temp"/>
+			<item value="web"/>
+			<item value="bus"/>
+			<item value="/bus/refresh"/>
+			<item value="ampq"/>
+			<item value="prot"/>
+			<item value="spring."/>
+			<item value="thymeleaf"/>
+			<item value=":"/>
+			<item value="configure"/>
+			<item value="configer"/>
+			<item value="订单处理完成"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="="/>
+			<item value="spring."/>
+			<item value="/"/>
+			<item value="ztx"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="300" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="410" key="DIALOG_HEIGHT"/>
+		<item value="966" key="DIALOG_X_ORIGIN"/>
+		<item value="74" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
